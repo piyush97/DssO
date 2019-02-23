@@ -4,7 +4,7 @@ const authRoutes = require('./routes/auth-routes')
 
 app.set('view engine', 'ejs')
 
-app.use(authRoutes)
+app.use('/auth', authRoutes)
 
 app.get('/',(req,res) => {
     res.render('home');
